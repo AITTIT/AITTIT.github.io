@@ -1,0 +1,82 @@
+body {
+    font-family: "DM Sans", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFD1AA80;
+  }
+  
+  #title {
+    background-color: #80451550;
+    width: 95%;
+    text-align: center;
+    margin: 15px auto 0;
+    border-radius: 10px;
+  
+  }
+  
+  h1 {
+    padding-top: 20px;
+    font-family: "Merriweather", serif;
+  }
+  
+  #title p {
+    padding-bottom: 10px;
+  }
+  
+  #img-div {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    border-radius: 15px;
+    max-width: 100%
+  }
+  
+  figcaption {
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  #tribute-info {
+    background-color: #80451550;
+    padding: 20px;
+    font-size: 17px;
+    width: 75%;
+    margin: 0 auto 0;
+    border-radius: 10px;
+  }
+  
+  .year {
+    font-weight: bold;
+  }
+  
+  #tribute-info li {
+    padding: 5px;
+  }
+  
+  #tribute-info p {
+    text-align: center;
+  }
+  
+  .more-info {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+  }
+  
+  li {
+    display: list-item;
+    list-style-type: square;
+  }
