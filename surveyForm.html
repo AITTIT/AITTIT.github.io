@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <link rel="stylesheet" href="surveyFormstyle.css">
+  <title> Company Survey Form</title>
+</head>
+<body>
+  <div  class="title-part">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve our customer experience!</p>
+  </div>
+  <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+<div class="general personal-info">
+  <label id="name-label" for="name">Name<input id="name" type="text" required placeholder="Enter your name" /></label>
+  <label id="email-label" for="email">Email<input id="email" type="email" required placeholder="Enter your email" /></label>
+  <label id="number-label" for="number">Age (optional)<input id="number" type="number" pattern="[0-9]" min="13" max="120" placeholder="Age" /></label>
+</div>
+<div class="general">
+  <label for="role">Overall, how satisfied are you with your most recent interaction with our company?
+    <select id="dropdown">
+      <option value="">Extremely satisfied</option>
+      <option value="1">Somewhat satisfied</option>
+      <option value="2">Neither satisfied nor dissatisfied</option>
+      <option value="3">Somewhat dissatisfied</option>
+      <option value="4">Extremely dissatisfied</option>
+    </select>
+  </label>
+  </div>
+  
+  <div class="general">
+  <p>Would you recommend our company to a friend?</p>
+  <label for="recommend-def"><input id="recommend-def" type="radio" name="recommend" value="recommend-definitely" checked/>Definitely</label>
+  <label for="recommend-maybe"><input id="recommend-maybe" type="radio" name="recommend" value="recommend-maybe" />Maybe</label>
+  <label for="recommend-not-sure"><input id="recommend-not-sure" type="radio" name="recommend" value="recommend-not-sure" />Not sure</label>
+  </div>
+  <div class="general">
+   <p>What would you like to see improved? (Check all that apply)</p>
+   <div class="checkboxes">
+   <label for="front-end"><input id="front-end" type="checkbox" value="improve-front">Customer service</label>
+   <label for="back-end"><input id="back-end" type="checkbox" value="improve-back">B2B customer service</label>
+   <label for="data-vis"><input id="data-vis" type="checkbox" value="improve-data">Logistics and deliveries</label>
+  <label for="challenges"><input id="challenges" type="checkbox" value="improve-chal">Warranties</label>
+</div>
+</div>
+<div class="general">
+  <label for="bio">If you would like to share any additional comments about your most recent interaction with our company, please enter them below: <textarea id="bio" name="bio" rows="5" cols="35" placeholder="Last time I ordered..."></textarea>
+  </label>
+  </div>
+  <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
